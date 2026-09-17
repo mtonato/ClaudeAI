@@ -1,0 +1,31 @@
+{
+  "learner": "Wankossi Milca TONATO",
+  "context_pro": "Cheffe Cellule des Systèmes d'Information et de la Digitalisation, ADPME (Bénin)",
+  "parcours_start_date": "2026-09-17",
+  "current_track": "decouverte",
+  "skills": {},
+  "mastered_skills": [],
+  "fragile_skills": [],
+  "underused_features": [
+    "projects",
+    "artifacts",
+    "connecteurs",
+    "skills-design",
+    "workflows-multi-etapes"
+  ],
+  "last_monthly_eval_date": null,
+  "last_weekly_recap_date": null,
+  "pending_notion_sync": [],
+  "notion": {
+    "root_page_id": "3def3ea5-1686-81d8-8155-d7a712839653",
+    "root_page_url": "https://app.notion.com/p/3def3ea5168681d88155d7a712839653?pvs=204",
+    "cours_quotidiens_page_id": "3def3ea5-1686-8123-9bda-d31a378b48fa",
+    "progression_page_id": "3def3ea5-1686-8114-877c-f3269325aae0",
+    "competences_page_id": "3def3ea5-1686-812e-8a41-ceaea97ab82b",
+    "astuces_page_id": "3def3ea5-1686-8170-88f2-cc65b85becc3",
+    "nouveautes_page_id": "3def3ea5-1686-819b-8b65-cf71ee910713",
+    "exercices_page_id": "3def3ea5-1686-81d8-be22-c3f3bab866b1",
+    "recaps_page_id": "3def3ea5-1686-81bb-a78b-c5dce934cc36"
+  },
+  "notes": "Fichier mis à jour automatiquement par le Skill claude-ai-expert-formation après chaque cours, récap ou évaluation. Ne pas éditer les statuts de compétences à la main sans mettre aussi à jour course-log.md en cohérence."
+}
