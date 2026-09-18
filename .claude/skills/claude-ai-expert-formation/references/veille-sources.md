@@ -32,6 +32,15 @@ utiliser l'outil de recherche web pour vérifier l'état réel des fonctionnalit
 Si la nouveauté est jugée suffisamment importante, elle devient le sujet prioritaire du jour (voir
 `priority-engine.md`, niveau 1) même si un autre sujet était pressenti.
 
+## Si l'outil de recherche web n'est pas disponible dans la session
+
+Certaines sessions déclenchées automatiquement peuvent démarrer avec un jeu d'outils réduit. Si
+aucun outil de recherche web n'est utilisable, NE PAS bloquer le cours pour autant : baser le
+sujet du jour sur la progression réelle (fondamentaux, approfondissement, cas d'usage pro — voir
+`priority-engine.md` niveaux 2 à 6) et l'indiquer explicitement dans le cours (« veille web non
+disponible dans cette session, sujet choisi sur la base de la progression »). Ne jamais prétendre
+avoir fait une recherche qui n'a pas eu lieu.
+
 ## Traçabilité
 
 Toute nouveauté abordée doit être ajoutée à la page Notion « 🆕 Nouveautés Claude » avec sa date

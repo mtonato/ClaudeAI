@@ -29,6 +29,7 @@ run-weekly-recap) sauf indication contraire de l'utilisateur.
 Ce Skill vit dans le dépôt `mtonato/ClaudeAI`. À chaque exécution :
 
 1. `git fetch origin claude/skill-formation-claude-ai-woxtg2 && git checkout claude/skill-formation-claude-ai-woxtg2 && git pull` (ou la branche que l'utilisateur indique avoir fusionnée — vérifier `git branch -a` si le checkout échoue). Ne jamais travailler sur un clone qui n'a pas ce Skill : s'il est absent, s'arrêter et prévenir l'utilisateur plutôt que d'improviser un cours hors-sol.
+   **Vérification obligatoire** : après cette étape, exécuter `git rev-parse --abbrev-ref HEAD && git log -1 --oneline` et vérifier explicitement que la sortie correspond à la bonne branche. Si une commande git renvoie un code d'erreur non nul à n'importe quelle étape de cette procédure (checkout, commit, push...), afficher le message d'erreur complet et l'inclure tel quel dans le message final — ne jamais continuer comme si de rien n'était ni supposer qu'une étape a réussi sans en vérifier la sortie.
 2. Lire `state/progress.json` et les ~30 dernières lignes de `state/course-log.md`.
 3. Exécuter la veille (voir `references/veille-sources.md`).
 4. Décider le sujet du jour (voir `references/priority-engine.md`).
@@ -44,7 +45,11 @@ Ce Skill vit dans le dépôt `mtonato/ClaudeAI`. À chaque exécution :
      déclenchées automatiquement par les Routines n'ont pas le connecteur Notion chargé (limite
      actuelle de l'organisation sur les Routines) — ce n'est pas une erreur à masquer.
 7. Mettre à jour `state/progress.json` et `state/course-log.md`, committer et pousser sur la
-   même branche.
+   même branche. **Pousser tout de suite après le commit** (`git push origin <branche>`) et
+   vérifier la sortie de la commande : un push qui échoue silencieusement rend toute la journée
+   invisible pour l'utilisatrice. En cas d'échec de push, réessayer une fois après un
+   `git pull --rebase`, puis si ça échoue encore, le dire explicitement dans le message final avec
+   l'erreur brute (jamais de silence).
 8. Terminer le tour par un message final concis contenant EXACTEMENT les champs que l'utilisateur
    doit recevoir en notification (titre, phrase d'objectif, durée, niveau, lien Notion) — ce
    message sert de base au résumé automatique poussé par la Routine (push + email). Voir
